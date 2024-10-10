@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose"
+import { Schema, model } from 'mongoose';
 
 const mortoSchema = new Schema({
     nome: {
@@ -18,6 +18,8 @@ const mortoSchema = new Schema({
         ref: 'Vivo',
         required: true
     }
-})
+});
 
-export default model('Morto', mortoSchema)
+export default model('Morto', mortoSchema);
+
+// os mesmos comentários do enterroModel valem para cá
