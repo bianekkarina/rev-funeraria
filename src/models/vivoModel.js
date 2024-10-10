@@ -1,11 +1,11 @@
-import { Schema, model } from "mongoose"
+import { Schema, model } from 'mongoose'; 
 
 const vivoSchema = new Schema({
     nome: {
         type: String,
         required: true
     },
-    dataNascimento: {
+    dataNascimento:{
         type: Date,
         required: true
     },
@@ -14,16 +14,11 @@ const vivoSchema = new Schema({
         required: true
     },
     telefone: {
-        type: [Number],
+        type: [ Number ],
         required: true
     }
-})
+});
 
-export default model('Vivo', vivoSchema)
+export default model('Vivo', vivoSchema);
 
-/*telefone: [
-    {
-        type: Number,
-        required: true
-    }
-]*/
+// os mesmos comentários do enterroModel valem para cá
