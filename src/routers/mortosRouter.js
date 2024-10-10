@@ -1,16 +1,18 @@
-import { Router } from 'express'
-import { 
+import { Router } from 'express';
+import {
     store,
     index,
     update,
     destroy
-} from '../controllers/mortosControllers.js'
+} from '../controllers/mortosController.js';
 
-const router = Router()
+const router = Router();
 
-router.post('/', store)
-router.get('/', index)
-router.put('/:id', update)
-router.delete('/:id', destroy)
+router.post('/', store);
+router.get('/', index);
+router.put('/:id', update);
+router.delete('/:id', destroy);
 
-export default router
+export default router;
+
+// os mesmos comentários do enterroRouter servem para cá
